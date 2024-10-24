@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Merriweather:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-open-sans">
+    <div class="container">
+        <h1 class="title">My To-Do List</h1>
+        <div class="input-group">
+            <input type="text" id="new-task" class="task-input" placeholder="Add a new task...">
+            <button id="add-task" class="add-button">Add Task</button>
+        </div>
+        <ul id="task-list"></ul>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="bg-color">Background Color:</label>
+                <select id="bg-color">
+                    <option value="#f4f4f4">Default</option>
+                    <option value="#ffcccb">Light Red</option>
+                    <option value="#cceeff">Light Blue</option>
+                    <option value="#ccffcc">Light Green</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="font-size">Font Size:</label>
+                <input type="range" id="font-size" min="12" max="24" value="16" step="1">
+                <span id="font-size-value">16px</span>
+            </div>
+            
+            <div class="control-group">
+                <label>Theme:</label>
+                <button id="dark-mode-toggle">Toggle Dark Mode</button>
+            </div>
+            
+            <div class="control-group">
+                <label for="font-family">Font Style:</label>
+                <select id="font-family" class="font-family-select">
+                    <option value="font-open-sans">Open Sans</option>
+                    <option value="font-merriweather">Times New Roman</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
